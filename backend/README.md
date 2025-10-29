@@ -96,3 +96,22 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+## Docker
+
+This repository includes a multi-stage `Dockerfile` in the `backend/` folder to build and run the NestJS backend.
+
+Quick usage (from repo root):
+
+```powershell
+# build image (from repo root)
+docker build -f backend/Dockerfile -t awad-backend:latest .
+
+# run container
+docker run -p 3000:3000 awad-backend:latest
+```
+
+Notes for Render:
+- In your Render service, choose 'Docker' deployment and point to the `backend/Dockerfile` (or place the Dockerfile at repo root). Render will use the Dockerfile to build the image.
+- If you prefer not to use Docker on Render, you can set the service's 'Root Directory' to `backend` so Render runs `npm install`/`npm run build` in that folder.
+
