@@ -12,7 +12,7 @@ Backend (API)
 1. Open a PowerShell terminal and go to the backend folder:
 
 ```powershell
-Set-Location 'D:\BigBoss\Web nâng cao\IA03\backend'
+Set-Location '22120216\backend'
 ```
 
 2. Install dependencies and start in dev mode:
@@ -29,7 +29,7 @@ Frontend (React + Vite)
 1. Open a new PowerShell terminal and go to the frontend folder:
 
 ```powershell
-Set-Location 'D:\BigBoss\Web nâng cao\IA03\frontend'
+Set-Location '22120216\frontend'
 ```
 
 2. Install dependencies and start the dev server:
@@ -50,7 +50,7 @@ Notes
 Backend:
 
 ```powershell
-Set-Location 'D:\BigBoss\Web nâng cao\IA03\backend'
+Set-Location '22120216\backend'
 npm run build
 npm run start:prod
 ```
@@ -58,7 +58,7 @@ npm run start:prod
 Frontend:
 
 ```powershell
-Set-Location 'D:\BigBoss\Web nâng cao\IA03\frontend'
+Set-Location '22120216\frontend'
 npm run build
 ```
 
